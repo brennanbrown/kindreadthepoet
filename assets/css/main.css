@@ -67,7 +67,6 @@
   
   h3 { 
     font-size: 2rem; 
-    margin-top: var(--spacing-lg);
     font-style: italic;
     font-weight: 600;
   }
@@ -242,8 +241,8 @@
     box-shadow: 
       0 20px 25px -5px rgba(0,0,0,0.1),
       0 10px 10px -5px rgba(0,0,0,0.04);
-    max-width: 800px;
     margin: var(--spacing-xl) auto;
+    width: 90%;
   }
   
   .form-group {
@@ -626,13 +625,6 @@
   }
   
   /* Contact Page */
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: var(--spacing-xl);
-    margin-top: var(--spacing-lg);
-  }
-  
   .contact-info {
     background-color: var(--light-gray);
     padding: var(--spacing-lg);
@@ -729,6 +721,7 @@
   
     .contact-form {
       padding: var(--spacing-lg);
+      width: 100%;
     }
   
     .contact-wrapper {

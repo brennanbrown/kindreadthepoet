@@ -4,13 +4,13 @@ title: About
 permalink: /about/
 ---
 
-# About Mark Madelo
+# About Marcus Madelo
 
 {{ site.author.bio }}
 
 ## Background
 
-Mark (Marcus) Madelo is a rising voice in Calgary's vibrant poetry scene. As a Filipino-Canadian poet and spoken word artist, his work explores themes of identity, culture, and community, drawing from his experiences growing up in Forest Lawn and his journey through academia and artistic expression.
+Marcus Madelo is a rising voice in Calgary's vibrant poetry scene. As a Filipino-Canadian poet and spoken word artist, his work explores themes of identity, culture, and community, drawing from his experiences growing up in Forest Lawn and his journey through academia and artistic expression.
 
 ## Current Work
 
@@ -18,11 +18,11 @@ As the VP of Outreach and Relations for Mount Royal University's Write Club, Mar
 
 ## Education
 
-Currently pursuing a degree in Sociology with a minor in Creative Writing at Mount Royal University, Mark combines academic insight with creative expression in his work.
+Currently pursuing a degree in Sociology with a minor in Creative Writing at Mount Royal University, Marcus combines academic insight with creative expression in his work.
 
 ## Influences
 
-Mark's poetry is influenced by:
+Marcus's poetry is influenced by:
 - Filipino oral traditions
 - Contemporary spoken word artists
 - Urban culture and skateboarding

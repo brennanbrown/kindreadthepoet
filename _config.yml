@@ -1,5 +1,5 @@
 # _config.yml
-title: Mark Madelo | Poet
+title: Marcus Madelo | Poet
 email: contact@kindreadthepoet.com
 description: >- 
   Mark (Marcus) Madelo is a Filipino-Canadian poet and spoken word artist
@@ -28,7 +28,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Mark Madelo"
+      author: "Marcus Madelo"
   - scope:
       path: ""
       type: "poems"
@@ -48,7 +48,7 @@ exclude:
 
 # Custom variables
 author:
-  name: Mark Madelo
+  name: Marcus Madelo
   bio: >-
     Filipino-Canadian poet born in Calgary and raised within the South East 
     neighborhoods of Forest Lawn. Full time student at Mount Royal University, 
