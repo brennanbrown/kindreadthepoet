@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include header.html %}
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+    <script src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+    {% endfor %}
+    {% endif %}
+</body>
+
+</html>

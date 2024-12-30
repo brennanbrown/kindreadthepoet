@@ -1,0 +1,55 @@
+# _config.yml
+title: Mark Madelo | Poet
+email: contact@kindreadthepoet.com
+description: >- 
+  Mark (Marcus) Madelo is a Filipino-Canadian poet and spoken word artist
+  based in Calgary, Alberta. VP of Outreach at MRU Write Club.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kindreadthepoet.com"
+twitter_username: kindreadthepoet
+github_username: kindreadthepoet
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  poems:
+    output: true
+    permalink: /poetry/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Mark Madelo"
+  - scope:
+      path: ""
+      type: "poems"
+    values:
+      layout: "poem"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+
+# Custom variables
+author:
+  name: Mark Madelo
+  bio: >-
+    Filipino-Canadian poet born in Calgary and raised within the South East 
+    neighborhoods of Forest Lawn. Full time student at Mount Royal University, 
+    majoring in Sociology while pursuing a minor in Creative Writing.

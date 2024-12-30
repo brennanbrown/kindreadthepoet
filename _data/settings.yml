@@ -1,0 +1,25 @@
+homepage:
+  featured_poems_count: 3
+  recent_posts_count: 2
+  
+site:
+  analytics_id: "" # Google Analytics ID
+  form_endpoint: "" # Form submission endpoint
+  newsletter_endpoint: "" # Newsletter signup endpoint
+  
+social_sharing:
+  twitter: true
+  facebook: true
+  linkedin: true
+  
+performance_dates:
+  upcoming:
+    - date: 2024-12-15
+      venue: "Calgary Public Library"
+      event: "Winter Poetry Showcase"
+      time: "7:00 PM"
+      
+    - date: 2025-01-20
+      venue: "Mount Royal University"
+      event: "Student Poetry Night"
+      time: "6:30 PM"

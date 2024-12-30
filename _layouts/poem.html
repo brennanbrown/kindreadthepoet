@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="poem">
+    <header class="poem-header">
+        <h1 class="poem-title">{{ page.title }}</h1>
+
+        <div class="poem-meta">
+            {% if page.date %}
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+                Written {{ page.date | date: "%B %Y" }}
+            </time>
+            {% endif %}
+
+            {% if page.category %}
+            <span class="poem-category">{{ page.category }}</span>
+            {% endif %}
+
+            {% if page.featured %}
+            <span class="poem-featured">Featured Work</span>
+            {% endif %}
+        </div>
+
+    </header>
+
+    <div class="poem-content">
+        {{ content }}
+    </div>
+
+    {% if page.series %}
+    <div class="series-nav">
+        <h3>Read the full series:</h3>
+        <div class="series-parts">
+            {% for i in (1..page.parts) %}
+            {% assign part_url = page.url | split: "part-" | first | append: "part-" | append: i %}
+            <a href="{{ part_url }}" class="series-part {% if i == page.current_part %}current{% endif %}">
+                Part {{ i }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+</article>

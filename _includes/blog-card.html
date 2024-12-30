@@ -1,0 +1,17 @@
+<article class="blog-card">
+    <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+    <div class="post-meta">
+        <time datetime="{{ include.post.date | date_to_xmlschema }}">
+            {{ include.post.date | date: "%B %-d, %Y" }}
+        </time>
+        {% if include.post.categories %}
+        <span class="categories">
+            {% for category in include.post.categories %}
+            <a href="{{ site.baseurl }}/categories/{{ category | slugify }}">{{ category }}</a>
+            {% endfor %}
+        </span>
+        {% endif %}
+    </div>
+    <p class="post-excerpt">{{ include.post.excerpt | strip_html | truncatewords: 30 }}</p>
+    <a href="{{ include.post.url }}" class="read-more">Read More</a>
+</article>

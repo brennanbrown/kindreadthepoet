@@ -1,0 +1,13 @@
+<div class="poetry-card">
+    <h3><a href="{{ include.poem.url }}">{{ include.poem.title }}</a></h3>
+    {% if include.poem.date %}
+    <p class="poem-date">{{ include.poem.date | date: "%B %Y" }}</p>
+    {% endif %}
+    {% if include.poem.excerpt %}
+    <p class="poem-excerpt">{{ include.poem.excerpt }}</p>
+    {% endif %}
+    {% if include.poem.venue %}
+    <p class="poem-venue">Performed at: {{ include.poem.venue }}</p>
+    {% endif %}
+    <a href="{{ include.poem.url }}" class="read-more">Read More</a>
+</div>

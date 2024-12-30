@@ -1,0 +1,62 @@
+---
+layout: default
+title: Mark Madelo | Poet & Spoken Word Artist
+description: Mark Madelo is a Filipino-Canadian poet and spoken word artist based in Calgary, Alberta.
+---
+
+<!-- Hero Section -->
+<section id="about" class="hero">
+    <img src="{{ site.baseurl }}/assets/images/headshot.jpg" alt="Mark Madelo" class="headshot">
+    <div class="bio">
+        <h1>Mark Madelo</h1>
+        {{ site.author.bio | markdownify }}
+        <div class="hero-cta">
+            <a href="{{ '/poetry' | relative_url }}" class="btn-primary">Read My Poetry</a>
+            <a href="{{ '/contact' | relative_url }}" class="btn-secondary">Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Poetry Section -->
+<section id="featured-poems">
+    <h2>Featured Poetry</h2>
+    <div class="poetry-grid">
+        {% assign featured_poems = site.poems | where: "featured", true | limit: 3 %}
+        {% for poem in featured_poems %}
+        {% include poem-card.html poem=poem %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Upcoming Performances -->
+{% if site.data.settings.performance_dates.upcoming %}
+<section id="performances">
+    <h2>Upcoming Performances</h2>
+    <div class="performance-grid">
+        {% for performance in site.data.settings.performance_dates.upcoming limit: 2 %}
+        <div class="performance-card">
+            <div class="performance-date">{{ performance.date | date: "%B %d, %Y" }}</div>
+            <h3>{{ performance.event }}</h3>
+            <p class="venue">{{ performance.venue }}</p>
+            <p class="time">{{ performance.time }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Latest Blog Posts -->
+<section id="recent-posts">
+    <h2>Latest Writing</h2>
+    <div class="blog-grid">
+        {% for post in site.posts limit:2 %}
+        {% include blog-card.html post=post %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Connect With Me!</h2>
+    {% include contact-form.html %}
+</section>

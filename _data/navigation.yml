@@ -1,0 +1,11 @@
+- name: About
+  link: /about/
+  
+- name: Poetry
+  link: /poetry/
+  
+- name: Blog
+  link: /blog/
+  
+- name: Contact
+  link: /contact/

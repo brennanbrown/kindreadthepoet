@@ -1,0 +1,37 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="mailto:{{ site.email }}" class="footer-email">Email: {{ site.email }}</a>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <div class="footer-social-links">
+                    {% if site.twitter_username %}
+                    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener"
+                        class="social-link">Twitter</a>
+                    {% endif %}
+                    {% if site.instagram_username %}
+                    <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener"
+                        class="social-link">Instagram</a>
+                    {% endif %}
+                    {% if site.linkedin_username %}
+                    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener"
+                        class="social-link">LinkedIn</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="footer-newsletter-form" action="#" method="POST">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="footer-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

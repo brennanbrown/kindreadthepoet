@@ -1,0 +1,14 @@
+- platform: Twitter
+  username: kindreadthepoet
+  url: https://twitter.com/kindreadthepoet
+  icon: twitter
+
+- platform: Instagram
+  username: kindreadthepoet
+  url: https://instagram.com/kindreadthepoet
+  icon: instagram
+
+- platform: LinkedIn
+  username: markMadelo
+  url: https://linkedin.com/in/markMadelo
+  icon: linkedin

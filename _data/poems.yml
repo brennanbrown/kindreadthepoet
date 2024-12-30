@@ -1,0 +1,38 @@
+featured:
+  - title: "First Featured Poem"
+    excerpt: "Opening lines of the featured poem..."
+    date: 2024-01-15
+    venue: "Calgary Spoken Word Festival"
+    
+  - title: "Second Featured Poem"
+    excerpt: "Opening lines of another featured piece..."
+    date: 2024-02-20
+    venue: "Mount Royal University Poetry Night"
+    
+  - title: "Third Featured Poem"
+    excerpt: "Beginning of the third featured work..."
+    date: 2024-03-10
+    venue: "Forest Lawn Library"
+
+categories:
+  - name: Spoken Word
+    description: "Pieces performed live at various venues"
+    
+  - name: Written
+    description: "Poetry primarily meant for the page"
+    
+  - name: Collaborative
+    description: "Works created with other artists"
+
+venues:
+  - name: "Calgary Spoken Word Festival"
+    location: "Calgary, AB"
+    type: "Festival"
+    
+  - name: "Mount Royal University"
+    location: "Calgary, AB"
+    type: "Academic"
+    
+  - name: "Forest Lawn Library"
+    location: "Calgary, AB"
+    type: "Community"
