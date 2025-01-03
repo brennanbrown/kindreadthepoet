@@ -1,7 +1,7 @@
 backend:
-  name: git
-  branch: main # Change to your default branch
-
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+  
 media_folder: "assets/images/uploads" # Folder for uploaded images
 public_folder: "/assets/images/uploads" # URL path for uploaded images
 
