@@ -1,0 +1,34 @@
+backend:
+  name: git
+  branch: main # Change to your default branch
+
+media_folder: "assets/images/uploads" # Folder for uploaded images
+public_folder: "/assets/images/uploads" # URL path for uploaded images
+
+collections:
+  # Poetry collection
+  - name: "poetry"
+    label: "Poetry"
+    folder: "_poetry" # Path to your poetry folder
+    create: true
+    slug: "{{slug}}" # Use the title to generate the slug
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Poem Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+
+  # Blog collection
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts" # Path to your blog posts folder
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format for blog post filenames
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
