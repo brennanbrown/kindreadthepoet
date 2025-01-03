@@ -9,14 +9,20 @@ collections:
   # Poetry collection
   - name: "poetry"
     label: "Poetry"
-    folder: "_poetry" # Path to your poetry folder
+    folder: "_poems" # Path to your poetry folder
     create: true
     slug: "{{slug}}" # Use the title to generate the slug
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string", required: false }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Poem Body", name: "body", widget: "markdown" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Series", name: "series", widget: "boolean", default: false }
+      - { label: "Series Title", name: "series_title", widget: "string", required: false }
+      - { label: "Parts", name: "parts", widget: "number", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
 
   # Blog collection
